@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Card from './components/card/Card'
+import libroImg from './assets/images/png/libro_cien_anios.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -16,18 +18,28 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
+
       <h1>Vite + React</h1>
-      <div className="card">
+
+      {/* ⬇️ Esto es SOLO demo temporal */}
+      <Card
+        rank={1}
+        image={libroImg}
+        title="The Let Them Theory"
+        description="A life-changing tool millions of people can’t stop talking about."
+        category="Ficción"
+        price={14.99}
+        oldPrice={18.99}
+        stock={15}
+        onAdd={() => console.log('Añadir')}
+        onFavorite={() => console.log('Favorito')}
+      />
+
+      <div className="vite-demo">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
