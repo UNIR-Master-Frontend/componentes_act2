@@ -1,0 +1,82 @@
+
+.Title{
+  color:black;
+  font-size: 0.7rem;
+  font-weight: 200;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  }
+
+.bloque-libro-imagen {
+background: white;
+border-radius: 10px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+overflow: hidden; 
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+}
+.bloque-libro-imagen:hover {
+  transform: scale(1.03);
+  transition: all 0.5s ease-in-out;
+}
+
+
+.ImagenesLibros {
+width: 100%;
+height: 100px;
+}
+
+.ImagenesLibros img {
+  width:100%;
+  height:100%;
+  object-fit: contain;
+  display: block;
+}
+.LandingCard {
+  display:flex;
+  align-items: center;
+  overflow-x:auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+  background-color: rgb(200, 200, 200);
+  border-radius: 13px;
+  scrollbar-width: none;
+margin-left: auto;
+margin-right: auto;
+  
+
+
+}
+
+.LandingCard > * {
+  flex:0 0 auto;
+  scroll-snap-align: center;
+  width:80%;
+}
+
+.libro {
+  color: white;
+  padding:10px;
+  background-color: blueviolet;
+  
+}
+
+.libro h2 {
+  font-size:0.8rem;
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.libro p {
+margin: 4px 0;
+text-align: center;
+font-size: 0.6rem;
+
+}

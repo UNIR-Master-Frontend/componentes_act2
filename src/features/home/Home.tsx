@@ -6,6 +6,7 @@ import kindleImg from "../../assets/images/svg/kindle.svg";
 import cambrigeImg from "../../assets/images/svg/cambrige.svg";
 import oxfordImg from "../../assets/images/svg/oxford.svg";
 import scribdImg from "../../assets/images/svg/scribd.svg";
+import LibroCarrusel from "./components/LibroCarrusel";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
             Tu navegador no soporta video.
           </video>
         </section>
+        <LibroCarrusel/>
 
         <section className="sponsor">
           <span className="sponsor-text">
