@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { getSpaces, getSpaceById } from "../../services/coworking.service";
+import { getSpaces, getSpaceById } from "../services/coworking.service";
 import { useModal } from "../../../hooks/useModal";
 import { SpaceDetailModal } from "./SpaceDetailModal";
 import { ReservationForm } from "./ReservationForm";

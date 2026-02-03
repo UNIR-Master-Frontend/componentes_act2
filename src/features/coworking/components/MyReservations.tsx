@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import {
   getReservations,
   deleteReservation,
-} from "../../services/coworking.service";
+} from "../services/coworking.service";
 import "../styles/reservations.css";
 
 export const MyReservations = () => {

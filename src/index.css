@@ -1,27 +1,9 @@
+@import "./styles/icomoon.css";
+@import "./styles/shared.css";
+
 * {
   margin: 0;
   box-sizing: border-box;
-}
-
-:root {
-  --primary-100: #ede9fe;
-  --primary-200: #ddd6fe;
-  --primary-500: #8b5cf6;
-  --primary-600: #7c3aed;
-  --primary-700: #6d28d9;
-  --primary-800: #5b21b6;
-
-  --surface-50: #f8fafc;
-  --surface-100: #f1f5f9;
-  --surface-200: #e2e8f0;
-  --surface-300: #cbd5e1;
-  --surface-400: #94a3b8;
-  --surface-500: #64748b;
-  --surface-600: #475569;
-  --surface-700: #334155;
-  --surface-900: #0f172a;
-
-  --white: #ffffff;
 
   font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -31,6 +13,46 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --white: white;
+
+  --primary-50: #f6f2ff;
+  --primary-100: #ede8ff;
+  --primary-200: #ded4ff;
+  --primary-300: #c5b2ff;
+  --primary-400: #a986ff;
+  --primary-500: #884afd;
+  --primary-600: #8232f5;
+  --primary-700: #7320e1;
+  --primary-800: #601abd;
+  --primary-900: #50179b;
+  --primary-950: #310c69;
+
+  --secondary-50: #faffe6;
+  --secondary-100: #f3fec9;
+  --secondary-200: #e5fc9a;
+  --secondary-300: #d0f75f;
+  --secondary-400: #b4eb1f;
+  --secondary-500: #9ad30f;
+  --secondary-600: #77a808;
+  --secondary-700: #5b800b;
+  --secondary-800: #48650f;
+  --secondary-900: #48650f;
+  --secondary-950: #1f2f04;
+
+  --surface-50: #f9fafb;
+  --surface-100: #f3f4f6;
+  --surface-200: #e5e7eb;
+  --surface-300: #d1d5db;
+  --surface-400: #9ca3af;
+  --surface-500: #6b7280;
+  --surface-600: #4b5563;
+  --surface-700: #374151;
+  --surface-800: #1f2937;
+  --surface-900: #111827;
+  --surface-950: #030712;
 }
 
 body {
