@@ -1,29 +1,25 @@
-import { useState } from "react";
-import Card from "./components/card/Card";
-import libroImg from "./assets/images/png/libro_cien_anios.png";
-import { Header } from "./components/header/Header";
-import { Footer } from "./components/footer/Footer";
-import { Coworking } from "./features/coworking/Coworking";
 import "./App.css";
+import { Header } from "./layout/header/Header";
+import { Footer } from "./layout/footer/Footer";
+import { Outlet } from "react-router";
 
 function App() {
-  const [count, setCount] = useState(0);
-  const [showReservations, setShowReservations] = useState(false);
-
   return (
     <>
-      <div>
-        <Header
-          showReservations={showReservations}
-          setShowReservations={setShowReservations}
-        />
-        <Coworking
-          showReservations={showReservations}
-          setShowReservations={setShowReservations}
-        />
-        <Footer />
+      <Header
+      // showReservations={showReservations}
+      // setShowReservations={setShowReservations}
+      />
 
-        {/* <Card
+      {/* <Coworking
+          showReservations={showReservations}
+          setShowReservations={setShowReservations}
+        />
+        */}
+
+      <Outlet />
+
+      {/* <Card
           rank={1}
           image={libroImg}
           title="The Let Them Theory"
@@ -35,7 +31,8 @@ function App() {
           onAdd={() => console.log("Añadir")}
           onFavorite={() => console.log("Favorito")}
         /> */}
-      </div>
+
+      <Footer />
     </>
   );
 }

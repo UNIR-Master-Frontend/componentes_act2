@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { createReservation } from "../../services/coworking.service";
+import { createReservation } from "../services/coworking.service";
 import { Modal } from "../../../components/modal/Modal";
 import "../styles/reservations.css";
 import { Button } from "../../../components/button/Button";
