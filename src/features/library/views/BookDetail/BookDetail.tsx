@@ -83,7 +83,12 @@ export default function BookDetail() {
             <small>Máximo 5 unidades</small>
 
             <div className="buttons-container">
-              <button className="primary">Añadir al carrito</button>
+              <button
+                className="primary"
+                onClick={() => alert("Compra realizada correctamente")}
+              >
+                Comprar
+              </button>
             </div>
           </section>
         </div>
