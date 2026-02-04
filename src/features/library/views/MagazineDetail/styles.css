@@ -1,0 +1,74 @@
+.mag-detail-page {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* =========================
+   Detalle principal
+========================= */
+
+.mag-detail-main {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.mag-detail-main img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+}
+
+.mag-detail-main .price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+  .mag-detail-main {
+    grid-template-columns: 320px 1fr;
+    align-items: start;
+  }
+}
+
+/* =========================
+   Carrusel revistas similares
+========================= */
+
+.mag-detail-carousel {
+  margin-top: 3rem;
+}
+
+.mag-detail-carousel h2 {
+  margin-bottom: 1rem;
+}
+
+/* carrusel horizontal */
+.mag-detail-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(260px, 280px);
+  gap: 1.25rem;
+
+  overflow-x: auto;
+  padding-bottom: 1rem;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* snap por card */
+.mag-detail-track > * {
+  scroll-snap-align: start;
+}
+
+/* móvil */
+@media (max-width: 480px) {
+  .mag-detail-track {
+    grid-auto-columns: 85%;
+  }
+}

@@ -1,10 +1,14 @@
-import { useRef, type MouseEventHandler } from "react";
-import Book from "../Book/Book";
+import { useRef, type ReactNode } from "react";
 
 import "./styles.css";
-import type { Book as BookInterface } from "../../interfaces/book.interface";
 
-export default function BooksCarousel({ title = "", books = [] }) {
+export default function Carousel({
+  title = "",
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
   const carouselRef: any = useRef(null);
 
   const isDown = useRef(false);
@@ -43,27 +47,21 @@ export default function BooksCarousel({ title = "", books = [] }) {
   };
 
   return (
-    <div className="books-carousel-container">
-      <div className="books-carouse-title">
+    <div className="carousel-container">
+      <div className="carousel-title">
         <span>
           <h3>{title}</h3>
         </span>
       </div>
       <div
-        className="books-carousel-content"
+        className="carousel-content"
         ref={carouselRef}
         onMouseDown={onMouseDown}
         onMouseLeave={onMouseLeave}
         onMouseUp={onMouseUp}
         onMouseMove={onMouseMove}
       >
-        {books.map((book: BookInterface) => {
-          return (
-            <div className="books-carousel-item" key={book.id + book.nombre}>
-              <Book book={book} />
-            </div>
-          );
-        })}
+        {children}
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ export default function Login() {
     const userData = await login({ user, password });
     setUserLogin(userData);
     setLoading(false);
-    navigate("/");
+    navigate(-1);
   };
 
   return (

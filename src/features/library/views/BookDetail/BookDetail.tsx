@@ -7,6 +7,7 @@ import bookImg from "../../../../assets/images/jpg/book.jpg";
 import type { Book as BookInterface } from "../../interfaces/book.interface";
 import useLoading from "../../../../hooks/useLoading";
 import SimilarBooks from "../../components/SimilarBooks";
+import BackButton from "../../../../components/BackButton/BackButton";
 
 export default function BookDetail() {
   const params = useParams();
@@ -34,6 +35,10 @@ export default function BookDetail() {
   return book ? (
     <>
       <div className="container overlay">
+        <div className="p-4">
+          <BackButton />
+        </div>
+
         <div className="grid">
           <section className="intro-container">
             <h1>{book.nombre}</h1>

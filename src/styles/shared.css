@@ -13,6 +13,10 @@
   padding: 1rem;
 }
 
+.pl-5 {
+  padding-left: 2rem;
+}
+
 a {
   color: inherit;
   text-decoration: none;

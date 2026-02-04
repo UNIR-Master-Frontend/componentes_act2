@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getTop10Books } from "../services/book.service";
-import BooksCarousel from "./BooksCarousel/BooksCarousel";
+import BooksCarousel from "./BooksCarousel";
 import useLoading from "../../../hooks/useLoading";
 
 export default function Top10Books() {

@@ -29,3 +29,9 @@ export const getSimilarBooks = async (id: number) => {
   const data = await response.json();
   return data;
 };
+
+export const getBooksPurchasesByUserId = async (id: number) => {
+  const response = await fetch(`${API_BASE_URL}/libros/usuarios/${id}`);
+  const data = await response.json();
+  return data;
+};

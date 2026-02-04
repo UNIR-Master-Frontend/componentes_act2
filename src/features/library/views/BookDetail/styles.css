@@ -133,6 +133,7 @@ button.text:active {
   color: var(--surface-400);
   margin: 0 1rem;
   font-weight: bold;
+  color: var(--primary-700);
 }
 
 .quantity-input-container .minus {
@@ -141,7 +142,6 @@ button.text:active {
 
 .quantity-input-container .plus {
   right: 0;
-  color: var(--primary-700);
 }
 
 .quantity-container .buttons-container {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BooksCarousel from "./BooksCarousel/BooksCarousel";
+import BooksCarousel from "./BooksCarousel";
 import useLoading from "../../../hooks/useLoading";
 import { getSimilarBooks } from "../services/book.service";
 
