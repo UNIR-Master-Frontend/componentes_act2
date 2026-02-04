@@ -6,9 +6,13 @@ import kindleImg from "../../assets/images/svg/kindle.svg";
 import cambrigeImg from "../../assets/images/svg/cambrige.svg";
 import oxfordImg from "../../assets/images/svg/oxford.svg";
 import scribdImg from "../../assets/images/svg/scribd.svg";
-import LibroCarrusel from "./components/LibroCarrusel";
+import useUser from "../../hooks/useuser";
+import { useNavigate } from "react-router";
 
 export default function Home() {
+  const { user } = useUser();
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="overlay">
@@ -26,12 +30,16 @@ export default function Home() {
             académicos, zonas de estudio colaborativo y una cafetería pensada
             para estudiantes.
           </h2>
-          <a href="/views/book-catalog/index.html">
+          <a onClick={() => navigate("/library")}>
             <button className="primary">Explorar catálogo</button>
           </a>
-          <button className="secondary">
-            <a href="#">Iniciar Sesión</a>
-          </button>
+
+          {!user && (
+            <a onClick={() => navigate("/auth")}>
+              <button className="secondary">Iniciar Sesión</button>
+            </a>
+          )}
+
           <video className="hero-video" autoPlay loop muted playsInline>
             <source src={heroVideo} type="video/mp4" />
             Tu navegador no soporta video.
@@ -115,12 +123,9 @@ export default function Home() {
             Únete a más de 1.500 estudiantes que ya confían en Nexus para sus
             materiales de estudio y espacios de trabajo.
           </span>
-          <a href="/views/book-catalog/index.html">
+          <a onClick={() => navigate("/library")}>
             <button className="primary-white">Explorar catálogo</button>
           </a>
-          <button className="secondary-white">
-            <a href="#">Iniciar Sesión</a>
-          </button>
         </section>
       </div>
     </>

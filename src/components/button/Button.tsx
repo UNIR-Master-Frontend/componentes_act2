@@ -9,6 +9,7 @@ export const Button = (props: ButtonProps) => {
       className={variant}
       onClick={props.onClick}
       type={props.type || "button"}
+      disabled={props.disabled}
     >
       <span>{props.label}</span>
     </button>

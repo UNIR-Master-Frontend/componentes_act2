@@ -9,4 +9,5 @@ export type ButtonProps = {
     | "primary-white"
     | "secondary-white";
   type?: "button" | "submit";
+  disabled?: boolean;
 };

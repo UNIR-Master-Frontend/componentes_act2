@@ -7,18 +7,23 @@ import Home from "./features/home/Home.tsx";
 import Library from "./features/library/Library.tsx";
 import Coworking from "./features/coworking/Coworking.tsx";
 import { LoadingProvider } from "./context/loadingContext.tsx";
+import Auth from "./features/auth/Auth.tsx";
+import { UserProvider } from "./context/UserContext.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <LoadingProvider>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="library/*" element={<Library />} />
-            <Route path="coworking/*" element={<Coworking />} />
-          </Route>
-        </Routes>
+        <UserProvider>
+          <Routes>
+            <Route path="/" element={<App />}>
+              <Route index element={<Home />} />
+              <Route path="library/*" element={<Library />} />
+              <Route path="coworking/*" element={<Coworking />} />
+            </Route>
+            <Route path="auth/*" element={<Auth />} />
+          </Routes>
+        </UserProvider>
       </LoadingProvider>
     </BrowserRouter>
   </StrictMode>,
