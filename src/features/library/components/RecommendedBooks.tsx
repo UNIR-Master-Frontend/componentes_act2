@@ -14,7 +14,7 @@ export default function RecommendedBooks() {
   const getRecommendedBooksData = async () => {
     setLoading(true);
     const recommendedBooksData = await getRecommendedBooks();
-    setRecommendedBooks(recommendedBooksData);
+    setRecommendedBooks(recommendedBooksData.recomendaciones);
     setLoading(false);
   };
 

@@ -1,4 +1,5 @@
 import BookList from "../components/BookList";
+import RecommendedBooks from "../components/RecommendedBooks";
 import Top10Books from "../components/Top10Books";
 
 export default function Books() {
@@ -6,6 +7,7 @@ export default function Books() {
     <>
       <BookList />
       <Top10Books />
+      <RecommendedBooks />
     </>
   );
 }
