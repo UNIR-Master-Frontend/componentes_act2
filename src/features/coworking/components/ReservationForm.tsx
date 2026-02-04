@@ -22,7 +22,8 @@ export const ReservationForm = (props) => {
 
   const handleReservar = async () => {
     try {
-      const entrada = new Date(fechaReserva);
+      const fechaBase = fechaReserva || new Date().toISOString().slice(0, 16);
+      const entrada = new Date(fechaBase);
       const salida = new Date(entrada);
       salida.setHours(salida.getHours() + 8);
 
