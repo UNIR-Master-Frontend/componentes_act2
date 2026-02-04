@@ -21,7 +21,7 @@ export default function Book({ book }: { book: Book }) {
         <h4>{book.nombre}</h4>
         <h5>{book.autor}</h5>
 
-        <small>{book.precio}</small>
+        <small>€{book.precio}</small>
 
         <div className="book-link">
           Más Información <span className="arrow">→</span>
