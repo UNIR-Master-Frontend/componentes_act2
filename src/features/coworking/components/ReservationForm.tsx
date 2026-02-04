@@ -42,6 +42,7 @@ export const ReservationForm = (props) => {
       alert("¡Reserva confirmada exitosamente! ✅");
       props.onClose();
     } catch (error) {
+      console.log(error);
       alert("Error al crear la reserva");
     }
   };

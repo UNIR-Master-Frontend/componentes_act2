@@ -1,19 +1,17 @@
-import ImagenesLibros from "./ImagenesLibros";
+// import ImagenesLibros from "./ImagenesLibros";
 import LibroUnidad from "./LibroUnidad";
-import {Book} from "../data/librosData.js";
-import { imageneslib } from "./ImagenesLibros";
-import "./carruselstyle.css"
+// import {Book} from "../data/librosData.js";
+// import { imageneslib } from "./ImagenesLibros";
+// import "./carruselstyle.css";
 
 const LandingCard = () => {
-    return (<>
-        <div className="Titlecarrusel">
-            <h1>
-                Explora nuestros libros destacados
-            </h1>
-        </div>
-        <div className='LandingCard'>
-                    
-                    {imageneslib.map((image) => {
+  return (
+    <>
+      <div className="Titlecarrusel">
+        <h1>Explora nuestros libros destacados</h1>
+      </div>
+      <div className="LandingCard">
+        {/* {imageneslib.map((image) => {
             
             
             const libroEncontrado = Book.find((libro:any) => libro.id === image.id);
@@ -32,13 +30,10 @@ const LandingCard = () => {
 
                 </div>
             )
-        })}
-    </div>
+        })} */}
+      </div>
     </>
-)
-}
-
-
-        
+  );
+};
 
 export default LandingCard;

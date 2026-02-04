@@ -37,7 +37,7 @@ export default function Home() {
             Tu navegador no soporta video.
           </video>
         </section>
-        <LibroCarrusel/>
+        {/* <LibroCarrusel/> */}
 
         <section className="sponsor">
           <span className="sponsor-text">

@@ -4,7 +4,7 @@ import "./header.css";
 import logo from "../../assets/images/svg/logo_nexus.svg";
 import menuIcon from "../../assets/images/svg/menu-hamburger.svg";
 import { useLocation } from "react-router";
-import ListItemHeader from "./components/ListItemHeader";
+import NavItem from "../../components/NavItem";
 
 interface HeaderProps {
   showReservations: boolean;
@@ -52,12 +52,8 @@ export const Header = () => {
 
         <nav className={menuOpen ? "nav-open" : ""}>
           <ul>
-            <ListItemHeader label="Inicio" path="/" active={pathname === "/"} />
-            <ListItemHeader
-              label="Librería"
-              path="/library"
-              active={pathname.includes("/library")}
-            />
+            <NavItem label="Inicio" path="/" />
+            <NavItem label="Librería" path="/library" />
 
             {/* <li
               className="nav-item-with-submenu"
@@ -72,11 +68,7 @@ export const Header = () => {
               </div>
             </li> */}
 
-            <ListItemHeader
-              label="Coworking"
-              path="/coworking"
-              active={pathname.includes("/coworking")}
-            />
+            <NavItem label="Coworking" path="/coworking" />
 
             <li className="button-group">
               <Button label="Registrarse" variant="primary-outline" />
