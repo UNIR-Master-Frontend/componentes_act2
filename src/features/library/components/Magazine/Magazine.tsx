@@ -19,6 +19,7 @@ export default function Magazine({ magazine }: { magazine: Magazine }) {
       <div className="magazine-content">
         <h4>Revista edición {magazine.edicion}</h4>
         <h5>{magazine.nombre}</h5>
+        <h5>Categoria: {magazine.categoria.toLocaleUpperCase()}</h5>
 
         <small>€{magazine.precio}</small>
 

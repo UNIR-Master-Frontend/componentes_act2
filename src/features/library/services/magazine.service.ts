@@ -46,3 +46,21 @@ export const getMagazinesPurchasesByUserId = async (id: number) => {
   const data = await response.json();
   return data;
 };
+
+export const getMagazinesCategories = async () => {
+  const response = await fetch(`${API_BASE_URL}/categorias/revistas`);
+  const data = await response.json();
+  return data;
+};
+
+export const getMagazinesByCategory = async (categoria: string) => {
+  const params = {
+    categoria,
+  };
+  const query = Object.entries(params)
+    .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
+    .join("&");
+  const response = await fetch(`${API_BASE_URL}/revistas?${query}`, {});
+  const data = await response.json();
+  return data;
+};

@@ -20,6 +20,7 @@ export default function Book({ book }: { book: Book }) {
       <div className="book-content">
         <h4>{book.nombre}</h4>
         <h5>{book.autor}</h5>
+        <h5>Categoria: {book.categoria.toLocaleUpperCase()}</h5>
 
         <small>€{book.precio}</small>
 

@@ -14,7 +14,9 @@ export default function NavItem({
     <li style={{ listStyle: "none" }}>
       <a
         className={`nav-link ${(path === "/" ? pathname === path : pathname.includes(path)) ? "active" : ""}`}
-        onClick={() => navigate(path)}
+        onClick={() => {
+          navigate(path);
+        }}
       >
         {label}
       </a>

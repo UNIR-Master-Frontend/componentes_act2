@@ -35,3 +35,21 @@ export const getBooksPurchasesByUserId = async (id: number) => {
   const data = await response.json();
   return data;
 };
+
+export const getBooksCategories = async () => {
+  const response = await fetch(`${API_BASE_URL}/categorias/libros`);
+  const data = await response.json();
+  return data;
+};
+
+export const getBooksByCategory = async (categoria: string) => {
+  const params = {
+    categoria,
+  };
+  const query = Object.entries(params)
+    .map(([key, value]) => `${key}=${encodeURIComponent(value)}`)
+    .join("&");
+  const response = await fetch(`${API_BASE_URL}/libros?${query}`, {});
+  const data = await response.json();
+  return data;
+};
