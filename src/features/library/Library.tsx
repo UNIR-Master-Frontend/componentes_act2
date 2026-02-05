@@ -20,7 +20,6 @@ export default function Library() {
 
         {user && (
           <>
-            <NavItem label="Carrito" path="/library/cart"></NavItem>
             <NavItem label="Mis compras" path="/library/purchases"></NavItem>
           </>
         )}

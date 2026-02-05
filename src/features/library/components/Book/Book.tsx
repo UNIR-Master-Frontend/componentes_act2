@@ -9,7 +9,7 @@ export default function Book({ book }: { book: Book }) {
   const navigate = useNavigate();
 
   const goToDetail = () => {
-    navigate(`${book.id}`);
+    navigate(`/library/books/${book.id}`);
   };
 
   return (

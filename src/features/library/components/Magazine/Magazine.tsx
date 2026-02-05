@@ -8,7 +8,7 @@ export default function Magazine({ magazine }: { magazine: Magazine }) {
   const navigate = useNavigate();
 
   const goToDetail = () => {
-    navigate(`${magazine.id}`);
+    navigate(`/library/magazines/${magazine.id}`);
   };
 
   return (
