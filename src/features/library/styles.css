@@ -1,0 +1,16 @@
+.library-navbar {
+  padding: 1rem 3.5rem;
+  display: flex;
+  background-color: var(--surface-100);
+  align-items: center;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.library-navbar a {
+  cursor: pointer;
+}
+
+.library-navbar a:hover {
+  color: var(--primary-700);
+}

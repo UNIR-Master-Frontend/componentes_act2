@@ -1,0 +1,40 @@
+.book-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-img img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.book-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.book-link {
+  margin-top: auto;
+  text-decoration: none;
+  color: var(--primary-700);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+}
+
+.book-content h4 {
+  color: var(--surface-500);
+}
+
+.book-content small {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--surface-500);
+  line-height: 1.3rem;
+}

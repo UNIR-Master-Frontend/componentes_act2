@@ -1,0 +1,262 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.intro-container,
+.info-container,
+.image-container,
+.quantity-container {
+  padding: 1rem;
+  display: grid;
+  grid-column: span 12;
+}
+
+.info-container p {
+  color: var(--surface-500);
+}
+
+.image-container {
+  justify-items: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  background-color: var(--surface-100);
+}
+
+.intro-container > h1 {
+  margin-bottom: 0;
+}
+
+.intro-container > h3 {
+  color: var(--surface-500);
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.intro-container span {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.intro-container span h3 {
+  text-decoration: line-through;
+  color: var(--surface-500);
+  font-weight: 600;
+}
+
+.intro-container span h2 {
+  color: var(--primary-700);
+}
+
+.intro-container small {
+  font-weight: bold;
+}
+
+.intro-container hr {
+  border-width: 0.2rem;
+  border-color: var(--primary-500);
+  color: var(--primary-500);
+  border-radius: 1rem;
+}
+
+.book-image {
+  width: 100%;
+  padding: 4rem;
+  height: 100%;
+}
+
+button.link,
+button.text {
+  color: var(--primary-500);
+  background-color: var(--white);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: background-color 0.4s;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+button.text {
+  padding: 0.5rem 0;
+}
+
+button.link:hover {
+  text-decoration: underline;
+}
+
+button.link:active,
+button.text:active {
+  background-color: var(--primary-200);
+}
+
+.quantity-container {
+  background-color: var(--surface-100);
+  margin: 0 0rem 3rem 0rem;
+  border: 1px solid var(--surface-300);
+  border-radius: 0.25rem;
+}
+
+.quantity-container small {
+  color: var(--surface-500);
+  margin: 0.5rem 0;
+}
+
+.quantity-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.quantity-input-container input {
+  border: 1px solid var(--surface-400);
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.quantity-input-container button {
+  position: absolute;
+  padding: 0.25rem 1rem;
+  color: var(--surface-400);
+  margin: 0 1rem;
+  font-weight: bold;
+  color: var(--primary-700);
+}
+
+.quantity-input-container .minus {
+  left: 0;
+}
+
+.quantity-input-container .plus {
+  right: 0;
+}
+
+.quantity-container .buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 0 1rem 0;
+}
+
+.quantity-container .buttons-container .buttons-container-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.quantity-container .buttons-container .buttons-container-footer i {
+  color: var(--primary-700);
+}
+
+@media (width >= 600px) {
+  .intro-container h1,
+  .intro-container h2,
+  .intro-container h3,
+  .info-container h3 {
+    margin: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .image-container {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    padding: 0 12rem;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .book-image {
+    /* max-width: 310px; */
+    width: 100%;
+    padding: 2rem 0;
+  }
+
+  .intro-container {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .info-container {
+    display: grid;
+    grid-column: 1;
+    grid-row: 3;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .quantity-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2 / span 3;
+  }
+}
+
+@media (width >= 1024px) {
+  .container {
+    margin-top: 2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 8rem;
+    gap: 1rem;
+  }
+
+  .image-container {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    margin: 3rem 0;
+    background-color: var(--surface-100);
+    margin: 0 1rem 3rem 1rem;
+    padding: 0;
+  }
+
+  .book-image {
+    width: auto;
+    padding: 0;
+  }
+
+  .intro-container {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .info-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .quantity-container {
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .quantity-container .buttons-container .buttons-container-footer {
+    flex-wrap: nowrap;
+  }
+}

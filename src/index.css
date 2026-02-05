@@ -1,0 +1,88 @@
+@import "./styles/icomoon.css";
+@import "./styles/shared.css";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --white: white;
+
+  --primary-50: #f6f2ff;
+  --primary-100: #ede8ff;
+  --primary-200: #ded4ff;
+  --primary-300: #c5b2ff;
+  --primary-400: #a986ff;
+  --primary-500: #884afd;
+  --primary-600: #8232f5;
+  --primary-700: #7320e1;
+  --primary-800: #601abd;
+  --primary-900: #50179b;
+  --primary-950: #310c69;
+
+  --secondary-50: #faffe6;
+  --secondary-100: #f3fec9;
+  --secondary-200: #e5fc9a;
+  --secondary-300: #d0f75f;
+  --secondary-400: #b4eb1f;
+  --secondary-500: #9ad30f;
+  --secondary-600: #77a808;
+  --secondary-700: #5b800b;
+  --secondary-800: #48650f;
+  --secondary-900: #48650f;
+  --secondary-950: #1f2f04;
+
+  --surface-50: #f9fafb;
+  --surface-100: #f3f4f6;
+  --surface-200: #e5e7eb;
+  --surface-300: #d1d5db;
+  --surface-400: #9ca3af;
+  --surface-500: #6b7280;
+  --surface-600: #4b5563;
+  --surface-700: #374151;
+  --surface-800: #1f2937;
+  --surface-900: #111827;
+  --surface-950: #030712;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--white);
+  color: var(--surface-900);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
