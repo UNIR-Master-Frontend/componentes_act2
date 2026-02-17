@@ -10,7 +10,7 @@ describe("Coworking Service", () => {
       { id: 2, nombre: "Sala B" },
     ];
 
-    vi.spyOn(global, "fetch").mockResolvedValue({
+    vi.spyOn(window, "fetch").mockResolvedValue({
       ok: true,
       status: 200,
       json: async () => mockSpaces,
