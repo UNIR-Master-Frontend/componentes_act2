@@ -1,6 +1,13 @@
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
 select {
   padding: 8px 12px;
-  min-width: 200px;
+  min-width: 100%;
   color: #1f2937;
 
   border: 1px solid #d1d5db;
@@ -23,4 +30,20 @@ select:disabled {
   background-color: #f3f4f6;
   color: #9ca3af;
   cursor: not-allowed;
+}
+
+@media (width >= 600px) {
+  .dropdown-container {
+    width: 50%;
+  }
+}
+
+@media (width >= 1024px) {
+  .dropdown-container {
+    width: auto;
+  }
+
+  select {
+    min-width: 200px;
+  }
 }
