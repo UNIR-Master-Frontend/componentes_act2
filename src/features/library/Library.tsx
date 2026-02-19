@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router";
 import "./styles.css";
 import Books from "./views/Books";
-import NavItem from "../../components/NavItem";
+import NavItem from "../../components/NavItem/NavItem";
 import Purchases from "./views/Purchases/Purchases";
 import BookDetail from "./views/BookDetail/BookDetail";
 import { Magazines } from "./views/Magazines";
