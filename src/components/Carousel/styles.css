@@ -24,10 +24,8 @@
 .carousel-content {
   gap: 2rem;
   align-items: center;
-
   display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: calc(100% / 4);
+  grid-auto-columns: 1;
   overflow-x: auto;
   padding: 1rem;
 
@@ -50,4 +48,18 @@
   flex-shrink: 0;
   user-select: none;
   height: 100%;
+}
+
+@media (width >= 600px) {
+  .carousel-content {
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 2);
+  }
+}
+
+@media (width >= 1024px) {
+  .carousel-content {
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 4);
+  }
 }

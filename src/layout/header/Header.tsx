@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./header.css";
 import logo from "../../assets/images/svg/logo_nexus.svg";
 import menuIcon from "../../assets/images/svg/menu-hamburger.svg";
-import NavItem from "../../components/NavItem";
+import NavItem from "../../components/NavItem/NavItem";
 import { useNavigate } from "react-router";
 import useUser from "../../hooks/useUser";
 import Button from "../../components/Button/Button";

@@ -1,6 +1,6 @@
 import { SpaceGrid } from "./views/SpaceGrid";
 import { MyReservations } from "./views/MyReservations";
-import NavItem from "../../components/NavItem";
+import NavItem from "../../components/NavItem/NavItem";
 
 import "./styles.css";
 import { Navigate, Route, Routes } from "react-router";

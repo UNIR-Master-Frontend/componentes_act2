@@ -29,14 +29,13 @@ export default function Dropdown({
 
   return (
     <>
-      <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+      <div className="dropdown-container">
         <h3>{label}</h3>
         <select
           name={name}
           value={value}
           onChange={handleChange}
           disabled={disabled}
-          style={{ padding: "8px", minWidth: 200 }}
         >
           <option key={undefined} value={undefined} disabled selected>
             Elegir
