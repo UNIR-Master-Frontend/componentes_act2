@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Dropdown from "../../../components/Dropdown/Dropdown";
-import MagazinesList from "../components/MagazinesList";
+import MagazinesList from "../components/MagazinesList/MagazinesList";
 import RecommendedMagazines from "../components/RecommendedMagazines";
 import Top10Magazines from "../components/Top10Magazines";
 import { getMagazinesCategories } from "../services/magazine.service";

@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import useLoading from "../../../hooks/useLoading";
-import MagazinesCarousel from "./MagazinesCarousel";
+import useLoading from "../../../../hooks/useLoading";
+import MagazinesCarousel from "../MagazinesCarousel";
 import {
   getMagazines,
   getMagazinesByCategory,
-} from "../services/magazine.service";
-import type { Magazine } from "../interfaces/magazine.interface";
+} from "../../services/magazine.service";
+import type { Magazine } from "../../interfaces/magazine.interface";
 
 export default function MagazinesList({ category = "" }: { category: string }) {
   const [magazines, setMagazines] = useState<Magazine[]>([]);
