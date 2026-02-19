@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { getSpaces, getSpaceById } from "../services/coworking.service";
 import { useModal } from "../../../hooks/useModal";
-import { SpaceDetailModal } from "../components/SpaceDetailModal";
-import { ReservationForm } from "../components/ReservationForm";
+import { SpaceDetailModal } from "../components/SpaceDetailModal/SpaceDetailModal";
+import { ReservationForm } from "../components/ReservationForm/ReservationForm";
 import "../styles/coworking-grid.css";
 import useLoading from "../../../hooks/useLoading";
 

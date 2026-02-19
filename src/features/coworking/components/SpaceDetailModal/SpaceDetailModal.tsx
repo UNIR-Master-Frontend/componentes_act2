@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Modal from "../../../components/modal/Modal";
-import "../styles/modal_styles.css";
-import Button from "../../../components/Button/Button";
+import Modal from "../../../../components/modal/Modal";
+import "../../styles/modal_styles.css";
+import Button from "../../../../components/Button/Button";
 
 export const SpaceDetailModal = (props: any) => {
   const [selectedDay, setSelectedDay] = useState(null);

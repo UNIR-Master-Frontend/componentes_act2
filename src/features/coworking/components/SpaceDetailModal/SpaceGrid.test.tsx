@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import * as CoworkingService from "../coworking/services/coworking.service";
+import * as CoworkingService from "../../services/coworking.service";
 
 afterEach(() => vi.restoreAllMocks());
 
