@@ -6,7 +6,7 @@ import Top10Magazines from "../components/Top10Magazines";
 import { getMagazinesCategories } from "../services/magazine.service";
 
 export const Magazines = () => {
-  const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState<any>([]);
   const [category, setCategory] = useState<string>("");
 
   useEffect(() => {

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { createReservation } from "../services/coworking.service";
-import Modal from "../../../components/modal/Modal";
-import "../styles/reservations.css";
-import Button from "../../../components/Button/Button";
+import { createReservation } from "../../services/coworking.service";
+import Modal from "../../../../components/modal/Modal";
+import "../../styles/reservations.css";
+import Button from "../../../../components/Button/Button";
 
 export const ReservationForm = (props: any) => {
   const [nombre, setNombre] = useState("");
