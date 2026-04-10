@@ -12,7 +12,7 @@ export const Footer = () => {
         <i className="icon-twitter"></i>
         <i className="icon-youtube"></i>
       </div>
-      <small>NEXUS @ 2025. All rights reserved</small>
+      <small>NEXUS @ 2026. All rights reserved</small>
     </footer>
   );
 };
