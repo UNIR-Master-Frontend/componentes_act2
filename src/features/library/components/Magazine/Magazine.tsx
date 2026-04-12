@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router";
 import "./styles.css";
 import type { Magazine } from "../../interfaces/magazine.interface";
-import magazineImg from "../../../../assets/images/jpg/magazine.jpg";
 import img1 from "../../../../assets/images/png/mag1.png";
 import img2 from "../../../../assets/images/png/mag2.png";
 import img3 from "../../../../assets/images/png/mag3.png";

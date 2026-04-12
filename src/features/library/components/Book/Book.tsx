@@ -1,7 +1,6 @@
 import type { Book } from "../../interfaces/book.interface";
 import Card from "../../../../components/Card/Card";
 
-import bookImg from "../../../../assets/images/jpg/book.jpg";
 import img1 from "../../../../assets/images/png/book1.png";
 import img2 from "../../../../assets/images/png/book2.png";
 import img3 from "../../../../assets/images/png/book3.png";
